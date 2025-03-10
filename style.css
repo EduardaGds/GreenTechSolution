@@ -1,0 +1,181 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    transition: 0.3s;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background-image: url('girl_happy.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position-y: bottom;
+}
+
+#navbar-box {
+    height: auto;
+    background-color: green;
+    margin-left: 3%;
+    margin-top: 30px;
+    padding-block: 10px;
+    transition: .1s;
+}
+
+#navbar-box h2 {
+    color: white;
+    margin-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+#column-right {
+    right: 25px;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 20%;
+    background-color: rgb(8, 71, 8);
+    padding: 20px;
+    color: white;
+    transition: .1s;
+}
+
+#column-right #form-box h3 {
+    text-align: center;
+}
+
+#box-benefits {
+    display: flex;
+    transition: .5s;
+}
+
+.benefits {
+    width: 33%;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-inline: 10px;
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+    color: green;
+    background-color: white;
+}
+
+#navbar a {
+    cursor: pointer;
+    transition: .2s;
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: green;
+}
+
+#form-box button {
+    border: 3px solid rgb(4, 185, 4);
+    border-radius: 3px;
+    background-color: white;
+    color: green;
+    width: 200px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: large;
+}
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 768px) {
+    #navbar-box {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar a {
+        margin: 10px 0;
+    }
+
+    #column-right {
+        width: 95%;
+        right: 5%;
+        top: 30%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    #box-benefits {
+        flex-direction: column;
+    }
+
+    .benefits {
+        width: 50%;
+        margin: 10px 0;
+        font-size: 2vw;
+    }
+
+    #form-box button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar-box h2 {
+        font-size: 18px;
+    }
+
+    #navbar a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #column-right {
+        top: 25%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .benefits {
+        font-size: 2vw;
+    }
+
+    #form-box button {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
